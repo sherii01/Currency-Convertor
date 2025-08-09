@@ -1,0 +1,152 @@
+
+body {
+  background: url("images/background.png") no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Poppins', sans-serif;
+  color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+
+h1, #cch1 {
+  text-align: center;
+  color: goldenrod;
+  font-size: 36px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+  text-shadow: 0 0 5px rgba(255, 215, 0, 0.3);
+  border:outset;
+  background-color: black;
+}
+
+h1:hover, #cch1:hover {
+  text-shadow: 0 0 10px rgba(255, 215, 0, 0.6);
+}
+
+
+.converter {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px;
+  border: 10px solid goldenrod;
+  padding: 30px;
+  background: rgba(0, 0, 0, 0.6);
+  width: 600px;
+  margin: 60px auto;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
+}
+
+.slots {
+  background: rgba(255, 255, 255, 0.05);
+  border: 3px solid goldenrod;
+  padding: 15px;
+  border-radius: 8px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.2);
+}
+
+
+select, input {
+  background-color: #1e1e1e;
+  color: #f0f0f0;
+  border: 1px solid goldenrod;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 16px;
+  margin-top: 10px;
+  transition: all 0.3s ease;
+}
+
+select:focus, input:focus {
+  outline: none;
+  border-color: #ffdd57;
+  box-shadow: 0 0 5px #ffdd57;
+}
+
+select:hover, input:hover {
+  border-color: #ffd700;
+  box-shadow: 0 0 8px rgba(255, 215, 0, 0.4);
+}
+
+/* === Chart Icon === */
+.fa-chart-line {
+  font-size: 60px;
+  color: goldenrod;
+  margin-bottom: 10px;
+}
+
+
+#cc {
+  background: url("images/background.png") no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Poppins', sans-serif;
+  color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+#ccdiv1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 10px solid goldenrod;
+  padding: 30px;
+  background: rgba(0, 0, 0, 0.6);
+  width: 600px;
+  margin: 60px auto;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
+}
+
+/* === Popularity List === */
+#ulpopularity {
+  border: 2px solid goldenrod;
+  width: 100%;
+  max-height: 400px;
+  padding: 10px;
+  font-size: 18px;
+  overflow-y: auto;
+
+  color: #f0f0f0;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  box-shadow: inset 0 0 10px rgba(255, 215, 0, 0.1);
+  list-style: none;
+}
+
+#ulpopularity li {
+  padding: 8px 12px;
+  border-bottom: 1px solid #444;
+  transition: background 0.3s;
+}
+
+#ulpopularity li:hover {
+  background-color: #333;
+  cursor: pointer;
+}
+
+/* === Graph Links === */
+#graphs a {
+  color: #ffdd57;
+  text-decoration: none;
+}
+
+#graphs a:hover {
+  text-decoration: underline;
+}
+
+
+@media (max-width: 700px) {
+  .converter, #ccdiv1 {
+    width: 90%;
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+}
